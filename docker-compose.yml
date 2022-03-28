@@ -1,0 +1,12 @@
+version: '2'
+services:
+  app:
+    build:
+      context: .
+    image: pnlinh/xdebug:latest
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - "8001:80"

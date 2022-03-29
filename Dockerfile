@@ -1,5 +1,8 @@
 FROM ubuntu:18.04
 
+WORKDIR /var/www/html
+VOLUME /var/www/html
+
 RUN apt-get update -y
 RUN apt-get install -y gnupg tzdata
 

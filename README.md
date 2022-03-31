@@ -6,7 +6,7 @@
 git clone git@github.com:pnlinh/php-xdebug-docker.git
 
 cd php-xdebug-docker
-./develop start
+./develop up -d --build
 ```
 
 ### Config Phpstorm
